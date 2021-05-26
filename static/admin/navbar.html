@@ -1,0 +1,144 @@
+{{define "navbar"}}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/admin">Six910</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="/admin/products" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admin/productListBySku">Search SKU</a>
+          <a class="dropdown-item" href="/admin/productListByName">Search Name</a>
+          <a class="dropdown-item" href="/admin/productListByCat">Search by Category</a>
+          <a class="dropdown-item" href="/admin/productList/0/100">View All</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/addProductPage">Add Product</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/productsUploadPage">Upload Products</a>
+          <a class="dropdown-item" href="/admin/imagesUploadPage">Upload Images</a>
+          <a class="dropdown-item" href="/admin/thumbnailsUploadPage">Upload Thumbnails</a>          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Customer
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admin/customerList/0/100">All</a>
+          <a class="dropdown-item" href="/admin/customerByEmail">Search Email</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Orders
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admin/orderList/New">New</a>
+          <a class="dropdown-item" href="/admin/orderList/Processing">Processing</a>
+          <a class="dropdown-item" href="/admin/orderList/Not paid">Not Paid</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/orderList/Shipped">Shipped</a>
+          <a class="dropdown-item" href="/admin/orderList/Canceled">Canceled</a>
+          <a class="dropdown-item" href="/admin/orderList/Partial Cancel">Partial Cancel</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Settings
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admin/shippingCarrierList">Shipping Carrier</a>
+          <a class="dropdown-item" href="/admin/shippingRegionList">Shipping Region</a>
+          <a class="dropdown-item" href="/admin/shippingMethodList">Shipping Method</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/taxRateList">Tax Rate</a>
+          <a class="dropdown-item" href="/admin/insuranceList">Insurance</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/pluginList/0/100">Plugins</a>
+          <a class="dropdown-item" href="/admin/storePluginList">Store Plugins</a>
+          <a class="dropdown-item" href="/admin/paymentGatewayList">Payment Gateway</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/getStore">Store Settings</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/generateSiteMap">Regenerate Site Map</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Design
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admin/addContentPage">Add Page Content</a>
+          <a class="dropdown-item" href="/admin/contentList">Site Content</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/imageList">Images (non product)</a>
+          <a class="dropdown-item" href="/admin/addImagePage">Add Image</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/menuList">Menus</a>
+          <a class="dropdown-item" href="/admin/addMenuPage">Add Menu</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/getPageCss/pageCss">Page CSS</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/admin/getCarousel/carousel">Carousel Settings</a>
+          
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Templates
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admin/templates">Installed</a>
+          <a class="dropdown-item" href="/admin/uploadTemplatePage">Upload New</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Site Backups
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admin/downloadBackup">Download</a>
+          <a class="dropdown-item" href="/admin/uploadBackupPage">Upload</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Users
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/admin/adminUserList">Admin User List</a>
+          <a class="dropdown-item" href="/admin/addAdminUserPage">Add Admin User</a>          
+          <a class="dropdown-item" href="/admin/logout">Logout</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="btn btn-primary" href="/" target="_blank" role="button">View Site</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+{{end}}
