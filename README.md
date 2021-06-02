@@ -1,6 +1,6 @@
-![](./six910.png)
+![](./Six910Cart-trans-blue.png)
 
-# Template Designer for Six910 E-Commerce Cart
+# Template Designer for Six910 Cart E-Commerce Solution
 Download this project and run ./main and ./server to start building templates
 
 Note: You will also need the Six910 MySql database installed
