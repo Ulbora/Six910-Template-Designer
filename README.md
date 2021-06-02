@@ -9,9 +9,13 @@ Note: You will also need the Six910 MySql database installed
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Six910-ui&metric=alert_status)](https://sonarcloud.io/dashboard?id=Six910-ui)
 
 
+## Bitcoin Payments Module Included
+Six910 now has a bitcoin payment module built on open source BTCPay Server. BTCPay Server is a self-hosted, open-source cryptocurrency payment processor. It's secure, private, censorship-resistant and free.
+
 
 ### Project Status
 Six910 has released and currently running on multiple sites.
+
 
 ### The Speeding Fast Shopping Cart
 An open source ecommerce platform server for building online shopping cart systems; written in golang. This is the user's storefront and admin panel.
